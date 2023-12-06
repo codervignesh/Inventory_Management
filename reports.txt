@@ -1,2 +1,40 @@
 Product Id Product Name         Product Price   Product Quantity Product Value            
 
+P-01       MacBookPro           20000.0         19              380000.0                 
+
+P-02       MacBookAir           15000.0         30              450000.0                 
+
+P-03       IPhone               25000.0         12              300000.0                 
+
+P-04       SamsungPhone         9800.0          35              343000.0                 
+
+P-05       Pen                  10.0            100             1000.0                   
+
+P-06       Pencil               5.0             98              490.0                    
+
+P-07       Eraser               5.0             200             1000.0                   
+
+P-08       Sharpner             5.0             150             750.0                    
+
+P-09       Scale                10.0            200             2000.0                   
+
+P-10       Watch                1000.0          23              23000.0                  
+
+P-11       coolers              250.0           10              2500.0                   
+
+P-12       Note                 50.0            5               250.0                    
+
+P-13       Charger              240.0           28              6720.0                   
+
+P-14       Bottle               50.0            45              2250.0                   
+
+P-15       Bat                  200.0           170             34000.0                  
+
+P-16       Ball                 20.0            171             3420.0                   
+
+P-17       Stand                120.0           20              2400.0                   
+
+P-18       Marker               50.0            59              2950.0                   
+
+Total                                           1375            1555730.0                
+
