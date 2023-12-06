@@ -10,5 +10,9 @@ P-09, Scale, 10.0, 200
 P-10, Watch, 1000.0, 23
 P-11, coolers, 250.0, 10
 P-12, Note, 50.0, 5
-P-13, Charger, 240.0, 30
+P-13, Charger, 240.0, 28
 P-14, Bottle, 50.0, 45
+P-15, Bat, 200.0, 170
+P-16, Ball, 20.0, 171
+P-17, Stand, 120.0, 20
+P-18, Marker, 50.0, 59
