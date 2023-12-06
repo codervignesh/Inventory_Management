@@ -50,22 +50,3 @@ public class Product {
         }while(choice != 0);
     }
 }
-
-class PurchaseMultiThread extends Thread{
-    String id;
-    int quantity;
-    PurchaseMultiThread(String id , int quantity)
-    {
-        this.id = id;
-        this.quantity = quantity;
-    }
-    public void run()
-    {
-        try{
-            Inventory inv = new Inventory();
-            inv.updateQuantityOnPurchase(id , quantity);
-        }catch(Exception e) {
-            System.out.println("Caught the exception");
-        }
-    }
-}
