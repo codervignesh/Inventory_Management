@@ -36,6 +36,8 @@ public class Inventory {
         products.add(new Product(prodId, prodName, prodPrice, prodQuantity));
         FileHandling.updateProducts(products);
         FileHandling.addLog("\nProduct with id " + prodId + " added to the inventory\n");
+        System.out.println(Thread.currentThread().getName());
+
     }
 
     private boolean isProdIDDuplicate(String pId) {
@@ -55,14 +57,14 @@ public class Inventory {
         int quantity;
 
         try {
-//            do {
+            do {
                 System.out.println("\nEnter Product ID: ");
                 id = sc.next();
                 System.out.println("Enter Quantity to purchase: ");
                 quantity = sc.nextInt();
-//            } while (updateQuantityOnPurchase(id, quantity));
-            Thread threadObject = new PurchaseMultiThread(id , quantity);
-            threadObject.start();
+            } while (updateQuantityOnPurchase(id, quantity));
+//                Thread threadObject = new PurchaseMultiThread(id , quantity);
+//                threadObject.start();
             displayProductById(id);
         } catch (InputMismatchException e){
             System.out.println(e);
@@ -87,6 +89,7 @@ public class Inventory {
                 FileHandling.updateProducts(products);
                 FileHandling.addLog("\n" + quantity + " quantity of Product with id " + id + " is purchased\n");
                 flag = false;
+                System.out.println(Thread.currentThread().getName());
             }
         }
         if(flag) {
@@ -107,6 +110,8 @@ public class Inventory {
                 isPresent = true;
             }
         }
+        System.out.println(Thread.currentThread().getName());
+
         if (!isPresent)
             System.out.println("No product with id: " + id);
     }
@@ -130,6 +135,7 @@ public class Inventory {
             totalValue += p.productPrice*p.productQuantity;
         }
         System.out.println("Total Inventory value: " + totalValue);
+        System.out.println(Thread.currentThread().getName());
 
     }
 }
